@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import _ from 'lodash'
 import CharacterCard from "./CharacterCard";
+import App from "./App";
 
 const prepareStateFromWord = (given_word) => {
 

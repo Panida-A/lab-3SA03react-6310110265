@@ -7,7 +7,6 @@ import { useState, useEffect } from 'react';
 
 const word = 'violin'
 
-
 function App() {
 
   const [buttonPopup, setButtonPopup] = useState(false);
