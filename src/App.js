@@ -1,17 +1,25 @@
+import { size } from 'lodash';
 import './App.css';
 import CharacterCard from './CharacterCard';
 import WordCard from './WordCard';
 
-const word = 'Hello';
+const word = 'apple';
 function App() {
 
   return (
 
-    <div>
-      {
-        <WordCard value = {word}/>
-      }
+    <div style={{textAlign: "center"}}>
+      <main>
+        <h1>
+          Game Logic
+        </h1>
+        <h3>
+          Choose letters to connect the correct words.
+        </h3>        
+      </main>      
+      <WordCard value = {word}/>
     </div>
+
 
   );
 }
