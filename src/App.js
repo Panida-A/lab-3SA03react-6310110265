@@ -4,19 +4,15 @@ import CharacterCard from './CharacterCard';
 import WordCard from './WordCard';
 import Popup from './components/Popup';
 import { useState, useEffect } from 'react';
+import WordRandom from './WordRandom'
 
-const word = 'apple';
+const word = 'violin'
+
+
 function App() {
 
   const [buttonPopup, setButtonPopup] = useState(false);
-  /*const [timedPopup, setTimedPopup] = useState(false);  
-  
-  useEffect (() => {
-    setTimeout(() => {
-      setTimedPopup(true);
-    }, 3000) ;
-  }, []);*/
-
+ 
   return (
 
     <div className="button-htp">
@@ -28,8 +24,13 @@ function App() {
           <h1>Game Logic</h1>        
           <WordCard value = {word}/>
 
+          <div className="details">
+            <p className='hint'>Hint: <span>It looks like a guitar with 4 strings.</span></p>
+          </div>
+          <br></br>
           <div className="htp">
-            <button className="how2p" onClick={() => setButtonPopup(true)}>How to play?</button>
+            <button className="how2p" onClick={() => setButtonPopup(true)}>
+              How to play?</button>
           </div>
           <br></br>
           
