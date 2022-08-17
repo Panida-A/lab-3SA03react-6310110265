@@ -4,7 +4,6 @@ import CharacterCard from './CharacterCard';
 import WordCard from './WordCard';
 import Popup from './components/Popup';
 import { useState, useEffect } from 'react';
-import WordRandom from './WordRandom'
 
 const word = 'violin'
 
