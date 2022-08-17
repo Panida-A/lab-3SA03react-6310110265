@@ -1,16 +1,41 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #2de8c3;
+}
+
+.wrapper {
+  width: 1000px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.wrapper h1 {
+  font-size: 40px;
+  font-weight: 800;
+  padding: 20px 25px;
+  border-bottom: 1px solid white;
+}
+
 .card {
   display: inline-block;
   text-align: center;
   width: 3em;
   font-size: 2em;
-  box-shadow: 0 4px 8px 0 hsla(0, 0%, 21%, 0.765);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 1em;
   user-select: none;
-
+  border-radius: 4px;
+  cursor: pointer;
  }
 
  .activeCard {
   color: rgb(255, 255, 255);
-  background: rgb(86, 255, 74);
+  background: rgb(142, 242, 237);
  }
+
+
+ 
  
